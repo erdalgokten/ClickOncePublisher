@@ -1,0 +1,14 @@
+﻿<Window x:Class="ClickOncePublisher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClickOnce Publisher" Height="135" Width="272" Initialized="Window_Initialized">
+    <Grid>
+        <CheckBox Content="Auto Increment Version" Height="16" HorizontalAlignment="Left" Margin="12,12,0,0" Name="chkAutoIncrement" VerticalAlignment="Top" IsChecked="True" Checked="chkAutoIncrement_Checked" Unchecked="chkAutoIncrement_Unchecked" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="68,34,0,0" Name="txtMajor" VerticalAlignment="Top" Width="39" IsEnabled="False" PreviewTextInput="textBox_PreviewTextInput" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="113,34,0,0" Name="txtMinor" VerticalAlignment="Top" Width="39" IsEnabled="False" PreviewTextInput="textBox_PreviewTextInput" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="158,34,0,0" Name="txtBuild" VerticalAlignment="Top" Width="39" IsEnabled="False" PreviewTextInput="textBox_PreviewTextInput" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="203,34,0,0" Name="txtRevision" VerticalAlignment="Top" Width="39" IsEnabled="False" PreviewTextInput="textBox_PreviewTextInput" />
+        <Label Content="Version" Height="23" HorizontalAlignment="Left" Margin="12,34,0,0" Name="lblVersion" VerticalAlignment="Top" />
+        <Button Content="Publish" Height="23" HorizontalAlignment="Left" Margin="167,63,0,0" Name="btnPublish" VerticalAlignment="Top" Width="75" Click="btnPublish_Click" />
+    </Grid>
+</Window>
